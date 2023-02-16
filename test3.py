@@ -25,3 +25,10 @@
     #myTurtle.right(90)
 #myWin.exitonclick()
 
+#acceder a api de cambio de moneda
+import requests
+
+url="http://jsonplaceholder.typicode.com/posts"
+resp=requests.get(url)
+print(resp.text)
+print(resp.json())
