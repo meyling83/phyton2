@@ -174,3 +174,5 @@ print(f"el maximo es {maximo}")
 print(f"el minimo es {minimo}") """
 print(f"el maximo es {max(notas)}")
 print(f"el minimo es {min(notas)}")
+
+print(f"el minimo es {min(notas)}")
