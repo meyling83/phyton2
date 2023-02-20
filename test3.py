@@ -26,9 +26,9 @@
 #myWin.exitonclick()
 
 #acceder a api de cambio de moneda
-import requests
+#import requests
 
-url="http://jsonplaceholder.typicode.com/posts"
-resp=requests.get(url)
-print(resp.text)
-print(resp.json())
+#url="http://jsonplaceholder.typicode.com/posts"
+#resp=requests.get(url)
+#print(resp.text)
+#print(resp.json())
