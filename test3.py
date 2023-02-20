@@ -32,3 +32,21 @@
 #resp=requests.get(url)
 #print(resp.text)
 #print(resp.json())
+
+import random
+
+#imprimri funciones de random
+print(dir(random))
+
+#numero aleatorio entr 0 y 0.99999
+x=random.random()
+print(x)
+
+#numero alaeatorio entre 10 y 99
+y=random.randint(10,100)
+print(y)
+
+#elige aleatotiamente un elemento de la lista
+frutas=["manzanas","platano","kiwi"]
+z=random.choice(frutas)
+print(z)
