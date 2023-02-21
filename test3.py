@@ -133,13 +133,79 @@ if x==15:
 
 #genera valor aleatorio de la lista de estudiantes, si es maria o juan imprime "maria y juan no estan em clases"
 #si es asier o jon, imprime "asier y jon si estan en clases"
-import random
+""" import random
 estudiantes=("jon","maria","juan","asier")
 
 estudiante=random.choice(estudiantes)
 if estudiante=="maria" or estudiante=="juan":
     print("maria y juan no estan em clases")
 elif estudiante=="asier" or estudiante=="jon":
-    print("asier y jon si estan en clases") 
-   
+    print("asier y jon si estan en clases") """
+
+#pregunta al usuario su contraseña y que la repita, mientras no coincidan las contraseñas sigue pidiendo que la repita
+""" password=input("Introduce tu contraseña:")
+repPassword=input("Introduce de nuevo tu contraseña:")
+while password!=repPassword:
+    repPassword=input("Introduce de nuevo tu contraseña:")
+print("muy bien las contraseñas coinciden") """
+
+""" while True:
+    pw1=input("Introduce tu contraseña:")
+    pw2=input("Introduce de nuevo tu contraseña:")
+    if pw1==pw2
+        print("muy bien las contraseñas coinciden")
+        break
+
+i=1
+ch="*"
+while i<10:
+    print(ch*i)
+    i=i+2 """
+
+""" s="    122,Python,es,64,un,777,lenguaje,222,de,55,66,programación  "
+s=s.strip()
+a=s.split(",")
+b=[] """
+""" for elemento in a:
+      if not elemento.isnumeric():
+         b.append(elemento)
+print(b) """
+
+# esto mismo lo puedo hacer en una sola linea con list comprehension de esta forma
+#b=[i for i in a if i==""]
+""" b=[i for i in a if not i.isnumeric()]
+print(b)
+texto_final=""
+for i in b:
+    #texto_final=texto_final + i + " "
+    #otra forma de hacerlo, para coger los elementos de la lista y hacer un string, con los espacios
+    texto_final=" ".join(str(i) for i in b)
+print(texto_final)
+print(texto_final.upper())
+print(texto_final.lower()) """
+
+
+#imprimir esterellas
+""" cadena="*"
+for i in range(5):
+    print(cadena)
+    cadena=cadena + "**"
+print("--------")
+for i in range(5):
+  
+    indice=len(cadena)-2
+    cadena=cadena[0:indice]
+    print(cadena)
+   """
+
+#s="     Palabra    "
+#aux=s.strip()
+#s="       Palabra"
+#aux=s.lstrip()
+
+s="hola.mundo.como.estas"
+aux=s.split(".")
+aux1=" ".join(i for i in aux)
+print(aux)
+print(aux1)
 
