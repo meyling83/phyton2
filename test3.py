@@ -124,6 +124,22 @@ while i<100:
         print(i)
     i+=1 """
 
+#genera numero aleatorio, si es 15, imprime es 15!!!!
+""" import random
 
+x=random.randint(12,18)
+if x==15:
+    print("es 15!!!!!") """
 
+#genera valor aleatorio de la lista de estudiantes, si es maria o juan imprime "maria y juan no estan em clases"
+#si es asier o jon, imprime "asier y jon si estan en clases"
+import random
+estudiantes=("jon","maria","juan","asier")
+
+estudiante=random.choice(estudiantes)
+if estudiante=="maria" or estudiante=="juan":
+    print("maria y juan no estan em clases")
+elif estudiante=="asier" or estudiante=="jon":
+    print("asier y jon si estan en clases") 
+   
 
