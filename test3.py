@@ -289,6 +289,19 @@ print(texto)
  """
 
 #separa los nombres de los dominios
+""" 
+#devuelve un texto con nuevos correos
+nombres = ("maria", "jon", "david")
+texto=",".join(nombre+"@nazaret.eus" for nombre in nombres)
+print(texto) """
+
+#otra via de la segunda ocurrencia
+""" texto = "    Lo más importante que nos ha mantenido en Python... bueno, hay 2 cosas importantes. Uno son las bibliotecas. La otra cosa que nos mantiene en Python, y esto es lo más importante, es facil de leer y entender. Cuando contratamos nuevos empleados. Solo digo, 'todo lo que escribas debe estar en python'. Sólo para que pueda leerlo. Y es increíble porque puedo ver desde el otro lado de la habitación, mirando su pantalla, si su código es bueno o malo. Porque un buen código de Python tiene una estructura muy obvia. Y eso hace que mi vida sea mucho más fácil   "
+primera_ocurrencia=texto.lower().find("python")
+longitud=len("python")
+segunda_ocurrencia=texto.lower().find("python",primera_ocurrencia+longitud,len(texto)-1)
+print(segunda_ocurrencia) """
+
 """ emails = ["jon.smith@microsoft.com", "maria.fernandez@microsoft.com", "david@microsoft.com", "isabel@microsoft.es","alfonso@gmail.com"]
 nombres=""
 dominios=""
@@ -302,17 +315,8 @@ for email in emails:
     nombres=nombres+ "," + nombre_completo
     if dominio not in dominios:
        dominios=dominios + "," + dominio
+      
 print(nombres)
 print(dominios)
+ """
 
-#devuelve un texto con nuevos correos
-nombres = ("maria", "jon", "david")
-texto=",".join(nombre+"@nazaret.eus" for nombre in nombres)
-print(texto) """
-
-#otra via de la segunda ocurrencia
-""" texto = "    Lo más importante que nos ha mantenido en Python... bueno, hay 2 cosas importantes. Uno son las bibliotecas. La otra cosa que nos mantiene en Python, y esto es lo más importante, es facil de leer y entender. Cuando contratamos nuevos empleados. Solo digo, 'todo lo que escribas debe estar en python'. Sólo para que pueda leerlo. Y es increíble porque puedo ver desde el otro lado de la habitación, mirando su pantalla, si su código es bueno o malo. Porque un buen código de Python tiene una estructura muy obvia. Y eso hace que mi vida sea mucho más fácil   "
-primera_ocurrencia=texto.lower().find("python")
-longitud=len("python")
-segunda_ocurrencia=texto.lower().find("python",primera_ocurrencia+longitud,len(texto)-1)
-print(segunda_ocurrencia) """
