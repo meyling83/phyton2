@@ -1,4 +1,4 @@
-#import requests
+import requests
 
 def imprimirMensaje(lenguaje):
     print(f"{lenguaje} es un lenguaje de programacion.")
@@ -15,12 +15,12 @@ def restar(numero1,numero2):
     return numero1-numero2
 
 
-""" def pagina():
+def pagina():
     link="http://info.cern.ch"
     r=requests.get(link)
     print(r.status_code)
-    html=r.text
-    print(html) """
+    html=r.text.replace("the first website","my website")
+    print(html) 
 
 #este codigo tengo que ponerlo para ejecutar este archivo como mi programa principal. si importo este archivo, en donde lo importe este codigo no se ejecuta   
 if __name__=='__main__':

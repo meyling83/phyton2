@@ -6,8 +6,8 @@ if __name__=='__main__':
     suma=sumar(numero1,numero2)
     print(f"la suma es {suma}") """
 
-    #numero1=float(input("entre el minuendo"))
-    #numero2=float(input("entre el sustraendo"))
-    #diferencia=restar(numero1,numero2)
-    #print(f"la diferencia es {diferencia}")
+    numero1=float(input("entre el minuendo"))
+    numero2=float(input("entre el sustraendo"))
+    diferencia=restar(numero1,numero2)
+    print(f"la diferencia es {diferencia}")
 
