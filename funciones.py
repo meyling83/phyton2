@@ -22,6 +22,21 @@ def pagina():
     html=r.text.replace("the first website","my website")
     print(html) 
 
+
+def validar_usuario(nombre,apellido,usuario,contraseña):
+    lista=["password","contraseña","123456"]
+    if len(usuario)<=5:
+        return "El nombre de usuario tiene que ser mayor que 5"
+    elif len(contraseña)<=6:
+        return "La contraseña tiene que ser mayor que 6"
+    elif contraseña in lista:
+        return "La contraseña no es correcta"
+    else: 
+        return "Bienvenido " + str(nombre).swapcase() + " " + str(apellido).swapcase()
+    
+    
+
+
 #este codigo tengo que ponerlo para ejecutar este archivo como mi programa principal. si importo este archivo, en donde lo importe este codigo no se ejecuta   
 if __name__=='__main__':
     #imprimirMensaje("Python")
