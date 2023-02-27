@@ -1,26 +1,30 @@
-#import funciones
+import funciones
 
 """ def hola():
     usuario=input("Entre el nombre")
     print(f"Bienvenido {usuario}") """
 
 #puedo pasar valor por defecto a los parametros de la funcion de esta forma. Tiene dos parametros a y b, que tienen por defecto hola los dos
-def imprimir(a,b="Hello"):
-    print(a,b)
+""" def imprimir(a,b="Hello"):
+    print(a,b) """
 
 #con *args paso un grupo de parametros
-def imprimirNumeros(*args):
-    print(args)
+""" def imprimirNumeros(*args):
+    print(args) """
 if __name__=='__main__':
+    valido=False
+    while valido==false:
+        nombre=input("introduce tu nombre")
+        valido=funciones.validar
     #puedo llamar a la funcion sin pasar parametros, o pasando solo uno, los que no pase cogen por defecto el valor que tenian por defecto
-    imprimir("hola")
+    #imprimir("hola")
     #puedo pasar ambos parametros
-    imprimir("hola","kaixo")
+    #imprimir("hola","kaixo")
     #puedo invertir el orden en el que paso los parametros
-    imprimir(b="hola",a="kaixo")
+    #imprimir(b="hola",a="kaixo")
 
     #uso del *args, paso los parametros que quiera
-    imprimirNumeros("hola","mundo","ssss")
+    #imprimirNumeros("hola","mundo","ssss")
     #hola()
 
    """  for i in range(3):
