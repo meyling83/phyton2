@@ -1,4 +1,5 @@
 import funciones
+import validar
 
 """ def hola():
     usuario=input("Entre el nombre")
@@ -12,10 +13,16 @@ import funciones
 """ def imprimirNumeros(*args):
     print(args) """
 if __name__=='__main__':
+    nombre=input("introduce elnombre")
+    apellido=
     valido=False
-    while valido==false:
-        nombre=input("introduce tu nombre")
-        valido=funciones.validar
+    while valido==False:
+        usuario=input("introduce tu usuario")
+        valido=validar.validar_usuario(nombre)
+    while valido==False:
+        contraseña=input("introduce la contraseña")
+        valido=validar.validar_contraseña(contraseña)
+    
     #puedo llamar a la funcion sin pasar parametros, o pasando solo uno, los que no pase cogen por defecto el valor que tenian por defecto
     #imprimir("hola")
     #puedo pasar ambos parametros

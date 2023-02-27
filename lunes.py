@@ -15,7 +15,21 @@ def imprimir_dias_semana(*args):
         contador+=1
         print(f"{dia} es el {contador} dia de la semana")
 
+def ref_demo(x):
+    x=42
+    print(x)
+
+def incrementar_ciudades(cities):
+    cities.append("madrid")
+    print(cities)
+
 if __name__=="__main__":
+    ciudades=["san sebastian","bilbao"]
+    incrementar_ciudades(ciudades)
+    print(ciudades)
+    """     x=100
+    ref_demo(x)
+    print(x) """
     """ imprimir_dias_semana("lunes","martes","miercoles","jueves","viernes")
     print("-"*10)
     imprimir_dias_semana("lunes","martes","miercoles","jueves","viernes","sabado","domingo") """
