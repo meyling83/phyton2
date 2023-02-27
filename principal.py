@@ -1,6 +1,40 @@
-import funciones
+#import funciones
 
+""" def hola():
+    usuario=input("Entre el nombre")
+    print(f"Bienvenido {usuario}") """
+
+#puedo pasar valor por defecto a los parametros de la funcion de esta forma. Tiene dos parametros a y b, que tienen por defecto hola los dos
+def imprimir(a,b="Hello"):
+    print(a,b)
+
+#con *args paso un grupo de parametros
+def imprimirNumeros(*args):
+    print(args)
 if __name__=='__main__':
+    #puedo llamar a la funcion sin pasar parametros, o pasando solo uno, los que no pase cogen por defecto el valor que tenian por defecto
+    imprimir("hola")
+    #puedo pasar ambos parametros
+    imprimir("hola","kaixo")
+    #puedo invertir el orden en el que paso los parametros
+    imprimir(b="hola",a="kaixo")
+
+    #uso del *args, paso los parametros que quiera
+    imprimirNumeros("hola","mundo","ssss")
+    #hola()
+
+   """  for i in range(3):
+        hola() """
+    
+   
+
+
+
+
+
+
+
+
     """ numero1=float(input("Entre un sumando"))
     numero2=float(input("Entre otro sumando"))
     suma=funciones.sumar(numero1,numero2)
@@ -11,11 +45,12 @@ if __name__=='__main__':
     diferencia=funciones.restar(numero1,numero2)
     print(f"la diferencia es {diferencia}") """
 
-funciones.pagina()  
+""" funciones.pagina()  
 
 nombre=input("Entre el nombre")
 apellido=input("Entre el apellido")
 nombre_usuario=input("Entre el nombre de usuario")
 contraseña=input("Entre la contraseña")
 texto=funciones.validar_usuario(nombre,apellido,nombre_usuario,contraseña)
-print(texto)
+print(texto) """
+
