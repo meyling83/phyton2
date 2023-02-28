@@ -22,7 +22,7 @@ if __name__=='__main__':
     while valido==False:
         contraseña=input("introduce la contraseña")
         valido=validar.validar_contraseña(contraseña)
-    print("Bienvenido " + str(nombre).swapcase() + " " + str(apellido).swapcase())
+    print("Bienvenido " + nombre + " " + apellido)
     #puedo llamar a la funcion sin pasar parametros, o pasando solo uno, los que no pase cogen por defecto el valor que tenian por defecto
     #imprimir("hola")
     #puedo pasar ambos parametros
@@ -34,8 +34,7 @@ if __name__=='__main__':
     #imprimirNumeros("hola","mundo","ssss")
     #hola()
 
-   """  for i in range(3):
-        hola() """
+ 
     
    
 

@@ -2,9 +2,9 @@ def validar_usuario(usuario):
     LONGITUD=6
     if len(usuario)<6:
         print("El nombre de usuario tiene que ser mayor que 5")
-        return False
-    else:
         return True
+    else:
+        return False
     """ if len(usuario)<=5:
         return "El nombre de usuario tiene que ser mayor que 5"
     elif len(contraseña)<=6:
@@ -19,9 +19,9 @@ def validar_contraseña(contraseña):
     LONGITUD=7
     if len(contraseña)<LONGITUD:
         print("La contraseña tiene que ser mayor que 6")
-        return False
+        return True
     elif contraseña in lista:
         print("La contraseña es muy facil")
-        return False
-    else:
         return True
+    else:
+        return False
