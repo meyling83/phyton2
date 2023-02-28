@@ -18,7 +18,7 @@ if __name__=='__main__':
     valido=False
     while valido==False:
         usuario=input("introduce tu usuario")
-        valido=validar.validar_usuario(nombre)
+        valido=validar.validar_usuario(usuario)
     while valido==False:
         contraseña=input("introduce la contraseña")
         valido=validar.validar_contraseña(contraseña)
