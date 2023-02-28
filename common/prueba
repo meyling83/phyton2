@@ -1,0 +1,50 @@
+#abre el archivo
+f=open("a3.txt","r")
+#
+print(f.name)
+print(f.mode)
+#lee 12 caracteres
+s=f.read(12)
+print(s)
+#lee una linea
+s=f.readline()
+print(s)
+s=f.readline()
+print(s)
+#lee todas las lineas
+lines=f.readlines()
+for l in lines:
+  print(l)
+
+f.close()
+
+# agrega al final el texto 
+with open("a3.txt","a") as f:
+  f.write("\n")#hace un salto de linea
+  f.write("appending")
+
+#para leer el archivo
+with open("a3.txt","r") as f:
+  
+  f.read(5)
+
+#borra todo y escribe esto
+with open("a3.txt","w") as f:
+  
+  f.write("writing")
+
+#leer y escibir
+with open("a3.txt","r+") as f:
+  f.write("prueba writing")
+  lines=f.readlines()
+  for l in lines:
+    print(l)
+
+
+
+with open("a3.txt","r") as f:
+  lines=f.readlines()
+  for l in lines:
+    print(l)
+
+f.write("prueba writing")
