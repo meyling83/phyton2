@@ -14,7 +14,7 @@ def validar_usuario(usuario):
     else: 
         return "Bienvenido " + str(nombre).swapcase() + " " + str(apellido).swapcase() """
     
-def validar_contraseña(contraseña):
+""" def validar_contraseña(contraseña):
     lista=["password","contraseña","123456"]
     LONGITUD=7
     if len(contraseña)<LONGITUD:
@@ -24,4 +24,4 @@ def validar_contraseña(contraseña):
         print("La contraseña es muy facil")
         return False
     else:
-        return True
+        return True """
