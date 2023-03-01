@@ -19,9 +19,9 @@ def validar_contraseña(contraseña):
     LONGITUD=7
     if len(contraseña)<LONGITUD:
         print("La contraseña tiene que ser mayor que 6")
-        return True
+        return False
     elif contraseña in lista:
         print("La contraseña es muy facil")
-        return True
-    else:
         return False
+    else:
+        return True

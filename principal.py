@@ -19,12 +19,13 @@ if __name__=='__main__':
     while valido==False:
         usuario=input("introduce tu usuario")
         valido=validar.validar_usuario(usuario)
+    valido=False
     while valido==False:
         contraseña=input("introduce la contraseña")
         valido=validar.validar_contraseña(contraseña)
     print("Bienvenido " + nombre + " " + apellido) 
 
-    
+
     #puedo llamar a la funcion sin pasar parametros, o pasando solo uno, los que no pase cogen por defecto el valor que tenian por defecto
     #imprimir("hola")
     #puedo pasar ambos parametros
